@@ -46,6 +46,14 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
 
+      - name: Check out build-pages (a private repo)
+        uses: actions/checkout@master
+        with:
+          repository: pratnavaak/build-pages
+
+      - name: Copy script build.py from the repo
+        run: cp build-pages/build.py ./
+
       # Runs a single command using the runners shell
       - name: Run a one-line script
         # build into "_site/"
