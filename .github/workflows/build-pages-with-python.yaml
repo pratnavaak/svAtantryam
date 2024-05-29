@@ -37,33 +37,36 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
+        with:
+          path: pages-repo
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
       - name: Set up Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v1
+        uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
 
-      - name: Check out build-pages (a private repo)
+      - name: Check out build-pages
         uses: actions/checkout@master
         with:
           repository: pratnavaak/build-pages
-
-      - name: Copy script build.py from the repo
-        run: cp pratnavaak/build-pages/build.py ./
+          path: build-pages
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        # build into "_site/"
-        run: python build.py
+        # build from "pages-repo/" into "pages-repo/_site/"
+        run: python build-pages/build.py pages-repo
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
+      - name: cd into pages-repo
+        run: cd pages-repo
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
