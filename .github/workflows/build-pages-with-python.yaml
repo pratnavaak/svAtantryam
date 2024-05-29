@@ -50,6 +50,7 @@ jobs:
         uses: actions/checkout@master
         with:
           repository: pratnavaak/build-pages
+          token: ${{ secrets.READ_REPO }}
 
       - name: Copy script build.py from the repo
         run: cp build-pages/build.py ./
