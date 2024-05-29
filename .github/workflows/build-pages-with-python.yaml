@@ -52,7 +52,7 @@ jobs:
           repository: pratnavaak/build-pages
 
       - name: Copy script build.py from the repo
-        run: cp build-pages/build.py ./
+        run: cp pratnavaak/build-pages/build.py ./
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
