@@ -41,15 +41,12 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
 
-      - name: Check out build-pages
-        uses: actions/checkout@master
-        with:
-          repository: pratnavaak/build-pages
-          path: build-pages
+      - name: Install Python dependencies
+        run: pip install -r build-pages/requirements.txt
 
-      - name: Run a one-line script
+      - name: Build
         # build from "pages-repo/" into "pages-repo/_site/"
-        run: python build-pages/build.py ./
+        run: python build.py ./
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

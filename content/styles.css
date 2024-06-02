@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&text=pratnavaak%40proton.me');
+@font-face {
+    font-family: 'Siddhanta-calcutta';
+    src: url('siddhanta-calcutta.ttf');
+}
+html {scroll-behavior: smooth;
+    background-color: #fffff8;}
+body {
+    max-width:30em;
+    --font-size: min(5.0svw, 1.2em);
+    font-size: var(--font-size);
+    margin: 1em auto;
+    padding: 0 var(--font-size);
+    line-height: 1.5;
+    color: #111111;
+    font-family: 'Siddhanta-calcutta', 'Siddhanta', 'Noto Serif Devanagari', serif;
+}
+h1 {font-weight: normal; padding: 0; line-height: 1em; margin-left: 0;}
+header { margin: 4em 0; }
+.highlight {
+    background-color:bisque;
+    border-radius: 0.5em;
+}
+h2 {font-size: 1em; margin-top: 3em; padding: 0;}
+h2,h3 {font-weight: normal;}
+/*h1 {text-align: center;}
+.tagline {text-align: center;}*/
+.tagline {padding: 0 2em; line-height: 1em;}
+/*ol {list-style: devanagari;}*/
+/*a {text-decoration: none;}*/
+a:visited {
+    color:#111111;
+}
+a { color: #111111; text-decoration-thickness: 1px; }
+.chandah {
+    padding-left: 2em;
+    white-space: nowrap;
+}
+code {
+    font-family: 'Source Code Pro', monospace;
+}
+.sukta {
+    line-height: 2em;
+    word-spacing: -0.5em;
+}
+.spaced {
+    word-spacing: normal;
+}
+.tukka {
+    display: inline-block;
+}
+
+strong {
+    font-weight: normal;
+    background-color:bisque;
+    border-radius: 0.5em;
+}
