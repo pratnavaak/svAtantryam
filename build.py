@@ -11,8 +11,9 @@ site = os.path.join(pages_repo, '_site')
 Path(site).mkdir(exist_ok=True)
 
 def convert(fn, md):
-    divisions = md.split('\n---\n')
+    divisions = md.split('---\n')
     yaml, matter = '', divisions[-1]
+    print(divisions)
     if len(divisions) > 2:
         yaml = divisions[1]
     title = fn[:-3]
