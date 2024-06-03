@@ -36,6 +36,10 @@ a { color: #111111; text-decoration-thickness: 1px; }
     padding-left: 2em;
     white-space: nowrap;
 }
+.blockquote {
+    padding-left: 2em;
+    white-space: nowrap;
+}
 code {
     font-family: 'Source Code Pro', monospace;
 }
