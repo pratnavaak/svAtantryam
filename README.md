@@ -1,1 +1,1 @@
-# [](pratnavaak.github.io/svAtantryam)
+# [pratnavaak.github.io/svAtantryam](https://pratnavaak.github.io/svAtantryam)
