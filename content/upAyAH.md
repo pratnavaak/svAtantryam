@@ -9,6 +9,6 @@ title: "स्वातन्त्र्योपायाः"
 
 अथोपायाः।
 
-[स्थाननिश्चयः](/upAyAH/sthAnanishcayaH)। [अजपालनम्](/upAyAH/ajapAlanam)। [तन्त्रसादने यत्नः](/upAyAH/tantrasAdanam)।
+[स्थाननिश्चयः](/svAtantryam/upAyAH/sthAnanishcayaH)। [अजपालनम्](/svAtantryam/upAyAH/ajapAlanam)। [तन्त्रसादने यत्नः](/svAtantryam/upAyAH/tantrasAdanam)।
 
 इत्युपायसंग्रहः।
