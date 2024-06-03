@@ -13,7 +13,6 @@ Path(site).mkdir(exist_ok=True)
 def convert(fn, md):
     divisions = md.split('---\n')
     yaml, matter = '', divisions[-1]
-    print(divisions)
     if len(divisions) > 2:
         yaml = divisions[1]
     title = fn[:-3]
@@ -25,7 +24,7 @@ def convert(fn, md):
 
 for root, subdirs, files in os.walk(os.path.join(pages_repo, 'content')):
     for dir in subdirs:
-        Path(os.path.join(site, root, dir)).mkdir(exist_ok=True)
+        Path(os.path.join(site, root.replace('/content', ''), dir)).mkdir(exist_ok=True)
     for file in files:
         fp = os.path.join(root, file)
         nfp = os.path.join(site, fp).replace('./content/','')
