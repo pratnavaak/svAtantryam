@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&text=pratnavaak%40proton.me');
 @font-face {
     font-family: 'Siddhanta-calcutta';
-    src: url('siddhanta-calcutta.ttf');
+    src: url('/svAtantryam/siddhanta-calcutta.ttf');
 }
 html {scroll-behavior: smooth;
     background-color: #fffff8;}
