@@ -53,7 +53,7 @@ fig = go.Figure(data=go.Choropleth(
         hovertext=[str(l[4]) for l in lbr],
         marker_line_color='black',
         marker_line_width=0.1,
-    ), layout=go.Layout(title = "industrial revolution effect: current population / max population before 1800"))
+    ), layout=go.Layout(title = "Industrial revolution effect: current population / max population before 1800"))
 
 fig.update_geos(
     showcountries=True,
