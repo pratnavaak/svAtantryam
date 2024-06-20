@@ -50,6 +50,7 @@ fig = go.Figure(data=go.Choropleth(
             tickvals = [math.log(v) for v in tickvals],
             ticktext = tickvals,
         ),
+        hoverinfo='text',
         hovertext=[str(l[4]) for l in lbr],
         marker_line_color='black',
         marker_line_width=0.1,
