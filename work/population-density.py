@@ -1,3 +1,5 @@
+from datetime import datetime
+
 file = [line.split(',') for line in open('population-density.csv').read().split('\n') if line][1:]
 
 file = [line for line in file if len(line) > 3 and line[1]]
@@ -19,7 +21,7 @@ def before(country):
     return max(b)
 
 def latest(country):
-    return data[country][2024]
+    return data[country][min(data[country].keys(), key = lambda k: abs(k - datetime.now().year))]
 
 lbr = sorted([[c, name[c], before(c), latest(c), latest(c) / before(c)] for c in data.keys()], key = lambda x: x[4])
 
