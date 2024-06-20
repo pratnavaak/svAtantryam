@@ -19,7 +19,7 @@ def before(country):
     return max(b)
 
 def latest(country):
-    return data[country][max(data[country].keys())]
+    return data[country][2024]
 
 lbr = sorted([[c, name[c], before(c), latest(c), latest(c) / before(c)] for c in data.keys()], key = lambda x: x[4])
 
